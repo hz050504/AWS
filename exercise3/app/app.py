@@ -43,7 +43,7 @@ def count_words():
         html = html + f'<span style="font-size: {size}; color: {colour}">{word}</span>'
 
     # j.
-    return html + "</body></html>
+    return html + "</body></html>"
 
 if __name__ == "__main__":
     app.run()
