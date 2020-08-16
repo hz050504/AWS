@@ -32,3 +32,6 @@ ADD /app /app
 EXPOSE 80
 # Set the default directory where CMD will execute
 WORKDIR /app
+# Set the default command to execute when creating a new container
+# i.e. using CherryPy to serve the application
+CMD python3 server.py
