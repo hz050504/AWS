@@ -30,7 +30,20 @@ def count_words():
     highCount = common[0][1]
 
     # g.
-    html
+    html= "<!DOCTYPE html><html><head><title>Word Cloud</title></head><body><h1>Most Common Words in Sense and Sendsibility</h1>"
 
-if __name__ == "__main__":
-    app.run()
+    # h. and i.
+    for word in words:
+        size = str(int(15 + fdist[word] / float(highCount) * 150))
+        colour = str(hex(int(0.8 * fdist[word] / \
+        float(highCount) * 256**3)))
+        colour = colour[-(len(colour) - 2):]
+        while len(colour) < 6:
+            colour = "0" + colour
+        html = html + f'<span style="font-size: {size}; color: {colour}">{word}</span>'
+
+    # j.
+    return html + "</body></html>
+
+##if __name__ == "__main__":
+##    app.run()
