@@ -30,7 +30,7 @@ def count_words():
     highCount = common[0][1]
 
     # g.
-    html= "<!DOCTYPE html><html><head><title>Word Cloud</title></head><body><h1>Most Common Words in Sense and Sendsibility</h1>"
+    html= '<!DOCTYPE html><html><head><title>Word Cloud</title></head><body style="word-wrap: break-word;""><h1>Most Common Words in Sense and Sendsibility</h1>'
 
     # h. and i.
     for word in words:
@@ -40,7 +40,7 @@ def count_words():
         colour = colour[-(len(colour) - 2):]
         while len(colour) < 6:
             colour = "0" + colour
-        html = html + f'<span style="font-size: {size}; color: {colour}">{word}</span>'
+        html = html + f'<span style="font-size: {size}px; color: #{colour}">{word}</span>'
 
     # j.
     return html + "</body></html>"
