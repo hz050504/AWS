@@ -30,7 +30,7 @@ def count_words():
     highCount = common[0][1]
 
     # g.
-    html= '<!DOCTYPE html><html><head><title>Word Cloud</title></head><body style="word-wrap: break-word;""><h1>Most Common Words in Sense and Sendsibility</h1>'
+    html= '<!DOCTYPE html><html><head><title>Word Cloud</title></head><body style="word-wrap: break-word;"><h1>Most Common Words in Sense and Sendsibility</h1>'
 
     # h. and i.
     for word in words:
